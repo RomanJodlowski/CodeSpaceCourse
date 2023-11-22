@@ -5,7 +5,7 @@
 // }
 
 // anonimus function simplif 
-let greed = name => "Hello, my name is " + name;
+let reverseString = name => "Hello, my name is " + name;
 
-console.log(greed("John"));
-console.log(greed("James"));
+console.log(reverseString("John"));
+console.log(reverseString("James"));
