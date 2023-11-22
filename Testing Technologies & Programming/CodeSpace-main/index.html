@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        #Rock {
+            border: 1px solid gold;
+            background-color:beige;
+            font-style: italic;
+            color: aliceblue;
+            margin: 5px;
+        }
+        #Paper {
+            border: 1px solid gold;
+            background-color: whitesmoke;
+            font-style: italic;
+            color: black;
+            margin: 5px;
+        }
+        #Scissors {
+            border: 1px solid gold;
+            background-color: silver;
+            font-style: italic;
+            color: darkslateblue;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body style = "text-align: center; background-color: burlywood">
+
+<h1 style = "color: green;">Rock - Paper - Scissors Game</h1>
+<h2>Chose any button</h2>
+
+<!--buttons to start the game-->
+<button type="submit" class="optionsR" onclick="buttons(this.id)" id="Rock">Rock</button>
+<button type="submit" class="optionsP" onclick="buttons(this.id)" id="Paper">Paper</button>
+<button type="submit" class="optionsS" onclick="buttons(this.id)" id="Scissors">Scissors</button>
+
+<!--get output by id-->
+<p id="outputUser"></p>
+<p id="outputComputer"></p>
+<p id="outputResult"></p>
+
+<script>
+
+    // result output
+    let  result = document.getElementById("outputResult");
+    
+    // user chose output
+    const userChoseR = document.getElementById("outputUser");
+
+    // function to start the game by clicking any button by user
+    function buttons(clicked)
+    {
+        // computer random generator
+        const computerOptions = ["Rock", "Paper", "Scissors"];
+        const computerChose = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+
+            // computer chose
+            if (computerChose === "Rock") {
+                document.getElementById("outputComputer").innerHTML =
+                    "Computer Chose is: " + computerChose;
+            } else if (computerChose === "Paper") {
+                document.getElementById("outputComputer").innerHTML =
+                    "Computer Chose is: " + computerChose;
+            } else {
+                document.getElementById("outputComputer").innerHTML =
+                    "Computer Chose is: " + computerChose;
+            }
+                userChoseR.innerHTML = "Your choice is: " + clicked;
+
+            // game results
+            if (((computerChose === "Rock") && (clicked === "Scissors")) || ((computerChose === "Paper") && (clicked === "Rock"))
+            || ((computerChose === "Scissors") && (clicked === "Paper")))
+            {
+                result.innerHTML = "Result: Computer won!"
+            }
+            else
+            {
+                result.innerHTML = "Result: You won!"
+            }
+
+            if (computerChose === clicked)
+            {
+                result.innerHTML = "Result: Both players selected " + clicked + ". It is a tie!"
+            }
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
