@@ -2,11 +2,11 @@
 // It should return a reversed array and it should work for any data type.
 
 function reverseString(name) {
-    let splitName = name.split("");
-    let reverseName = splitName.reverse();
-    let joinName = reverseName.join("");
-    return joinName;
+    let splitArray = name.split("");
+    let reverseArray = splitArray.reverse();
+    let joinArray = reverseArray.join("");
+    return joinArray;
     }
     
-    console.log(reverseString("John"));
-    console.log(reverseString("James"));
+    console.log(reverseString(1, 2, 3, 4, 5));
+    console.log(reverseString("JavaScript", "like", "I"));
