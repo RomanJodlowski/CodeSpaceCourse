@@ -7,5 +7,5 @@
 // anonimus function simplif 
 let greed = name => "Hello, my name is " + name;
 
-console.log("John");
-console.log("James");
+console.log(greed("John"));
+console.log(greed("James"));
