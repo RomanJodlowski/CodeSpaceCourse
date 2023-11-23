@@ -2,7 +2,7 @@
 // It should accept a single argument representing a person's name. 
 // It should return a reverse string as shown below.
 
-function reverseString(name) {
+const reverseString = name => {
     let splitName = name.split("");
     let reverseName = splitName.reverse();
     let joinName = reverseName.join("");
