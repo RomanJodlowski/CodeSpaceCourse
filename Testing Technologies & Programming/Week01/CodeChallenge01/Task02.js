@@ -8,4 +8,4 @@ const stringReverse = ["I", " like", " JavaScript"].reverse(),
 return [stringReverse, numbergReverse];
 }
     
-    console.log(reverseArray().reverse());
+    console.log(reverseArray());
