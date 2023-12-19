@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03032bd8-eb9b-4b5e-8141-69816e635b76" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/PHPMailer/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LjTRUIld8ji2wayIJDciVfDfuk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jodlo/Desktop/myStudy/BlCollege/Advance Web Scripting/cinema&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="forgot-password.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/forgot-password.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03032bd8-eb9b-4b5e-8141-69816e635b76" name="Changes" comment="" />
+      <created>1676383483414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676383483414</updated>
+      <workItem from="1676383484616" duration="22444000" />
+      <workItem from="1676456875022" duration="12737000" />
+      <workItem from="1676483730446" duration="5978000" />
+      <workItem from="1676497088905" duration="9346000" />
+      <workItem from="1676579866461" duration="5200000" />
+      <workItem from="1676586480478" duration="3369000" />
+      <workItem from="1676639380770" duration="16323000" />
+      <workItem from="1676888407928" duration="6165000" />
+      <workItem from="1677003229456" duration="6496000" />
+      <workItem from="1677066116412" duration="1182000" />
+      <workItem from="1678098412609" duration="3843000" />
+      <workItem from="1678278712852" duration="1299000" />
+      <workItem from="1678373921429" duration="14891000" />
+      <workItem from="1678401793670" duration="1385000" />
+      <workItem from="1678449365168" duration="8613000" />
+      <workItem from="1678498539002" duration="17399000" />
+      <workItem from="1678595978604" duration="1054000" />
+      <workItem from="1678597242370" duration="5902000" />
+      <workItem from="1678699511852" duration="6619000" />
+      <workItem from="1678720763617" duration="8402000" />
+      <workItem from="1678813377366" duration="13620000" />
+      <workItem from="1678974204590" duration="19033000" />
+      <workItem from="1679058004663" duration="9878000" />
+      <workItem from="1679101740417" duration="12904000" />
+      <workItem from="1679120631487" duration="2442000" />
+      <workItem from="1679161828484" duration="863000" />
+      <workItem from="1679188476472" duration="7630000" />
+      <workItem from="1679208622716" duration="643000" />
+      <workItem from="1679307896303" duration="2675000" />
+      <workItem from="1679425614421" duration="6406000" />
+      <workItem from="1679710517752" duration="8207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
