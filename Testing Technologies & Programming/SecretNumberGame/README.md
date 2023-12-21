@@ -1,4 +1,4 @@
-<h1>Secred Number Game</h1>
+<h3>Secred Number Game</h3>
 <p>This program generates a random number between 1 and 20.</p>
 <p>The user can enter their number and guess whatever number is being matched with the generated number.</p>
 <p>If the numbers are the same, an appropriate message is printed on the screen, 
