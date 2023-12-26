@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2023 at 12:33 PM
+-- Generation Time: Dec 26, 2023 at 12:57 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -157,6 +157,124 @@ INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `password`, `r
 (8, 'Olivia', 'Lee', 'olivialee@example.com', 'password789', '2023-05-08 00:00:00', 1008),
 (9, 'Daniel', 'Martinez', 'danielmartinez@example.com', 'danielpass', '2023-05-09 00:00:00', 1009),
 (10, 'Sophia', 'Garcia', 'sophiagarcia@example.com', 'pass4567', '2023-05-10 00:00:00', 1010);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_feedback`
+-- (See below for the actual view)
+--
+CREATE TABLE `view_feedback` (
+`feedback_id` int(10) unsigned
+,`user_id` int(10) unsigned
+,`description` decimal(8,2)
+,`feedback_date` datetime
+,`ranking` int(10) unsigned
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_items`
+-- (See below for the actual view)
+--
+CREATE TABLE `view_items` (
+`item_id` int(10) unsigned
+,`item_name` varchar(20)
+,`item_desc` varchar(200)
+,`item_img` varchar(20)
+,`item_price` decimal(4,2)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_orders`
+-- (See below for the actual view)
+--
+CREATE TABLE `view_orders` (
+`user_id` int(10) unsigned
+,`item_id` int(10) unsigned
+,`total` decimal(8,2)
+,`order_date` datetime
+,`quantity` int(10) unsigned
+,`payment_id` int(10) unsigned
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_payment`
+-- (See below for the actual view)
+--
+CREATE TABLE `view_payment` (
+`payment_id` int(10) unsigned
+,`payment_amount` decimal(6,2)
+,`account_no` int(10)
+,`bsb_no` int(10)
+,`user_id` int(10)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `view_users`
+-- (See below for the actual view)
+--
+CREATE TABLE `view_users` (
+`user_id` int(10) unsigned
+,`firstname` varchar(20)
+,`lastname` varchar(40)
+,`email` varchar(60)
+,`password` varchar(40)
+,`reg_date` datetime
+,`payment_id` int(10)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_feedback`
+--
+DROP TABLE IF EXISTS `view_feedback`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_feedback`  AS SELECT `feedback`.`feedback_id` AS `feedback_id`, `feedback`.`user_id` AS `user_id`, `feedback`.`description` AS `description`, `feedback`.`feedback_date` AS `feedback_date`, `feedback`.`ranking` AS `ranking` FROM `feedback``feedback`  ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_items`
+--
+DROP TABLE IF EXISTS `view_items`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_items`  AS SELECT `items`.`item_id` AS `item_id`, `items`.`item_name` AS `item_name`, `items`.`item_desc` AS `item_desc`, `items`.`item_img` AS `item_img`, `items`.`item_price` AS `item_price` FROM `items``items`  ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_orders`
+--
+DROP TABLE IF EXISTS `view_orders`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_orders`  AS SELECT `orders`.`user_id` AS `user_id`, `orders`.`item_id` AS `item_id`, `orders`.`total` AS `total`, `orders`.`order_date` AS `order_date`, `orders`.`quantity` AS `quantity`, `orders`.`payment_id` AS `payment_id` FROM `orders``orders`  ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_payment`
+--
+DROP TABLE IF EXISTS `view_payment`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_payment`  AS SELECT `payment`.`payment_id` AS `payment_id`, `payment`.`payment_amount` AS `payment_amount`, `payment`.`account_no` AS `account_no`, `payment`.`bsb_no` AS `bsb_no`, `payment`.`user_id` AS `user_id` FROM `payment``payment`  ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `view_users`
+--
+DROP TABLE IF EXISTS `view_users`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_users`  AS SELECT `users`.`user_id` AS `user_id`, `users`.`firstname` AS `firstname`, `users`.`lastname` AS `lastname`, `users`.`email` AS `email`, `users`.`password` AS `password`, `users`.`reg_date` AS `reg_date`, `users`.`payment_id` AS `payment_id` FROM `users``users`  ;
 
 --
 -- Indexes for dumped tables
